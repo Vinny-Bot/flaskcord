@@ -5,7 +5,6 @@ import functools
 from . import exceptions
 from flask import current_app
 
-
 class JSONBool(object):
 
     def __init__(self, value):
@@ -35,7 +34,7 @@ def json_bool(value):
 # Decorators.
 
 def requires_authorization(view):
-    """A decorator for flask views which raises exception :py:class:`flask_discord.Unauthorized` if the user
+    """A decorator for flask views which raises exception :py:class:`flaskcord.Unauthorized` if the user
     is not authorized from Discord OAuth2.
 
     """
@@ -46,6 +45,6 @@ def requires_authorization(view):
     def wrapper(*args, **kwargs):
         if not current_app.discord.authorized:
             raise exceptions.Unauthorized
-        return view(*args, **kwargs)
+        return current_app.ensure_sync(view)(*args, **kwargs)
 
     return wrapper
