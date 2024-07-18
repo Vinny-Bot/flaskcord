@@ -81,4 +81,4 @@ For an example to the working application, check [`test_app.py`](tests/test_app.
 Head over to [documentation] for full API reference. 
 
 
-[documentation]: https://Flaskcord.readthedocs.io/en/latest/
+[documentation]: https://flaskcord.readthedocs.io/en/latest/
