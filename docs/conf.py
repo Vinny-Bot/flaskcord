@@ -20,7 +20,7 @@ sys.path.append('../flaskcord/')
 # -- Project information -----------------------------------------------------
 
 project = 'Flaskcord'
-copyright = '2019-2024 □ | The Cosmos, 2024-present Vinny-Bot'
+copyright = '2019-2024 The Cosmos, 2024-present Vinny-Bot'
 author = 'The Cosmos & Vinny contributors'
 
 with open('../flaskcord/__init__.py') as f:
