@@ -37,6 +37,9 @@ def requires_authorization(view):
     """A decorator for flask views which raises exception :py:class:`flaskcord.Unauthorized` if the user
     is not authorized from Discord OAuth2.
 
+    .. versionchanged:: 0.1.70
+        You can now use this decorator within async views
+
     """
 
     # TODO: Add support to validate scopes.
