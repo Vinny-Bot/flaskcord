@@ -6,9 +6,8 @@
 Welcome to Flaskcord's documentation!
 =========================================
 
-.. image:: /images/background.jpg
-
-Flaskcord is an extension made for Flask which makes implementation of
+Flaskcord is an async-friendly fork of Flask-Discord, an
+extension made for Flask which makes implementation of
 Discord's OAuth2 API easier.
 
 **Features**
@@ -17,7 +16,7 @@ Discord's OAuth2 API easier.
 - Covers most of the scopes provided by the API.
 - Supports various discord models and objects.
 - An internal smart caching layer to increase the performance.
-
+- Flask[async] support
 
 Contents
 --------
