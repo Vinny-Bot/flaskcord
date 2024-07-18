@@ -5,11 +5,11 @@
 Introduction
 ============
 
-Flask-Discord is an extension for Flask - Python web framework which
-makes easy implementation of Discord OAuth2 API. After creating a discord
-client object, one can easily request authorization and hence any of the
-resources provided by the discord OAuth2 API under the available scope
-permissions.
+Flaskcord is a fork of Flaskcord, which is an extension for Flask -
+Python web framework which makes easy implementation of Discord OAuth2
+API. After creating a discord client object, one can easily request
+authorization and hence any of the resources provided by the discord
+OAuth2 API under the available scope permissions.
 
 Requirements
 ------------
@@ -29,15 +29,15 @@ Requirements
 Installing
 ----------
 
-You can install Flask-Discord directly from PyPI using PIP and following command
+You can install Flaskcord directly from PyPI using PIP and following command
 in shell or command prompt: ::
 
-    python3 -m pip install -U Flask-Discord
+    python3 -m pip install -U flaskcord
 
 You can also install the latest development version (**maybe unstable/broken**) by
 using following command: ::
 
-    python3 -m pip install -U git+https://github.com/thec0sm0s/Flask-Discord.git@dev
+    python3 -m pip install -U git+https://github.com/vinny/flaskcord.git@dev
 
 
 Basic Usage
@@ -51,7 +51,7 @@ in exchange for fetching user's details and display them on web page.
     import os
 
     from flask import Flask, redirect, url_for
-    from flask_discord import DiscordOAuth2Session, requires_authorization, Unauthorized
+    from flaskcord import DiscordOAuth2Session, requires_authorization, Unauthorized
 
     app = Flask(__name__)
 
@@ -113,7 +113,7 @@ in exchange for fetching user's details and display them on web page.
 
 .. code-block:: python3
 
-    from flask_discord import DiscordOAuth2Session
+    from flaskcord import DiscordOAuth2Session
 
     discord = DiscordOAuth2Session()
 

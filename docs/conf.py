@@ -14,16 +14,16 @@ import os
 import re
 import sys
 sys.path.insert(0, os.path.abspath('..'))
-sys.path.append('../flask_discord/')
+sys.path.append('../flaskcord/')
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'Flask-Discord'
-copyright = '2019, □ | The Cosmos'
-author = '□ | The Cosmos'
+project = 'Flaskcord'
+copyright = '2019-2024 □ | The Cosmos, 2024-present Vinny-Bot'
+author = 'The Cosmos & Vinny contributors'
 
-with open('../flask_discord/__init__.py') as f:
+with open('../flaskcord/__init__.py') as f:
     ver = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 # The short X.Y version
 version = ver

@@ -1,5 +1,5 @@
 """
-Flask-Discord
+Flaskcord
 -------------
 
 An Discord OAuth2 flask extension.
@@ -12,7 +12,7 @@ from setuptools import setup, find_packages
 
 
 def __get_version():
-    with open("flask_discord/__init__.py") as package_init_file:
+    with open("flaskcord/__init__.py") as package_init_file:
         return re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', package_init_file.read(), re.MULTILINE).group(1)
 
 
@@ -39,12 +39,12 @@ extra_requirements = {
 
 
 setup(
-    name='Flask-Discord',
+    name='Flaskcord',
     version=__get_version(),
-    url='https://github.com/thec0sm0s/Flask-Discord',
+    url='https://github.com/Vinny-Bot/Flaskcord',
     license='MIT',
-    author='□ | The Cosmos',
-    author_email='deepakrajko14@gmail.com',
+    author='The Cosmos & Vinny contributors',
+    author_email='dev@vinny.pp.ua',
     description='Discord OAuth2 extension for Flask.',
     long_description=__doc__,
     packages=find_packages(),

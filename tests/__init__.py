@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask
-from flask_discord import DiscordOAuth2Session
+from flaskcord import DiscordOAuth2Session
 
 
 discord = DiscordOAuth2Session(client_id=490732332240863233)

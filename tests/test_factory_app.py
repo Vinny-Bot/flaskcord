@@ -2,7 +2,7 @@ import os
 
 from tests import get_app, discord
 from flask import redirect, url_for
-from flask_discord import requires_authorization
+from flaskcord import requires_authorization
 
 
 app = get_app()

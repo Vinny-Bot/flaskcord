@@ -23,15 +23,15 @@ class DiscordModelsBase(metaclass=DiscordModelsMeta):
 
     @staticmethod
     def _request(*args, **kwargs):
-        """A shorthand to :py:func:flask_discord.request`. It uses Flask current_app local proxy to get the
-        Flask-Discord client.
+        """A shorthand to :py:func:flaskcord.request`. It uses Flask current_app local proxy to get the
+        Flaskcord client.
 
         """
         return current_app.discord.request(*args, **kwargs)
 
     @staticmethod
     def _bot_request(*args, **kwargs):
-        """A shorthand to :py:func:flask_discord.bot_request`."""
+        """A shorthand to :py:func:flaskcord.bot_request`."""
         return current_app.discord.bot_request(*args, **kwargs)
 
     @classmethod

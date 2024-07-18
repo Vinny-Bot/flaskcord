@@ -1,13 +1,14 @@
-# Flask-Discord
-[![PyPI](https://img.shields.io/pypi/v/Flask-Discord?style=for-the-badge)](https://pypi.org/project/Flask-Discord/) [![Read the Docs](https://img.shields.io/readthedocs/flask-discord?style=for-the-badge)](https://flask-discord.readthedocs.io/en/latest/) [![Discord](https://img.shields.io/discord/690878977920729177?label=Discord%20Community&logo=Discord&style=for-the-badge)](https://discord.gg/7CrQEyP)
+# Flaskcord
+[![PyPI](https://img.shields.io/pypi/v/Flaskcord?style=for-the-badge)](https://pypi.org/project/Flaskcord/) [![Read the Docs](https://img.shields.io/readthedocs/Flaskcord?style=for-the-badge)](https://Flaskcord.readthedocs.io/en/latest/) [![Discord](https://img.shields.io/discord/690878977920729177?label=Discord%20Community&logo=Discord&style=for-the-badge)](https://discord.gg/7CrQEyP)
 
 Discord OAuth2 extension for Flask.
+Forked from Flaskcord, with support for flask[async]
 
 
 ### Installation
 To install current latest release you can use following command:
 ```sh
-python3 -m pip install Flask-Discord
+python3 -m pip install flaskcord
 ```
 
 
@@ -16,7 +17,7 @@ python3 -m pip install Flask-Discord
 import os
 
 from flask import Flask, redirect, url_for
-from flask_discord import DiscordOAuth2Session, requires_authorization, Unauthorized
+from flaskcord import DiscordOAuth2Session, requires_authorization, Unauthorized
 
 app = Flask(__name__)
 
@@ -49,7 +50,7 @@ def redirect_unauthorized(e):
 	
 @app.route("/me/")
 @requires_authorization
-def me():
+def me(): # supports async if using flask[async]!
     user = discord.fetch_user()
     return f"""
     <html>
@@ -80,4 +81,4 @@ For an example to the working application, check [`test_app.py`](tests/test_app.
 Head over to [documentation] for full API reference. 
 
 
-[documentation]: https://flask-discord.readthedocs.io/en/latest/
+[documentation]: https://Flaskcord.readthedocs.io/en/latest/
