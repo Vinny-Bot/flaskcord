@@ -33,7 +33,7 @@ if on_rtd:
 
 extra_requirements = {
     'docs': [
-        'sphinx==1.8.3'
+        'sphinx>=7.4.6'
     ]
 }
 
