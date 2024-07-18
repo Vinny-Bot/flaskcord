@@ -1,5 +1,5 @@
 # Flaskcord
-[![PyPI](https://img.shields.io/pypi/v/Flaskcord?style=for-the-badge)](https://pypi.org/project/Flaskcord/) [![Read the Docs](https://img.shields.io/readthedocs/Flaskcord?style=for-the-badge)](https://Flaskcord.readthedocs.io/en/latest/) [![Discord](https://img.shields.io/discord/690878977920729177?label=Discord%20Community&logo=Discord&style=for-the-badge)](https://discord.gg/7CrQEyP)
+[![PyPI](https://img.shields.io/pypi/v/flaskcord?style=for-the-badge)](https://pypi.org/project/flaskcord/) [![Read the Docs](https://img.shields.io/readthedocs/flaskcord?style=for-the-badge)](https://flaskcord.readthedocs.io/en/latest/) [![Discord](https://img.shields.io/discord/1258233857358958633?label=Vinny%20Support%20Server&logo=Discord&style=for-the-badge)](https://discord.gg/FgyJJV24XF)
 
 Discord OAuth2 extension for Flask.
 Forked from Flaskcord, with support for flask[async]
